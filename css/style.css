@@ -1,0 +1,281 @@
+body {
+    font-family: 'Raleway';
+    background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65));
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+#mainNav .navbar-nav .nav-item.active .nav-link {
+    color: #c3b979;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+    color: rgb(92, 92, 92);
+    font-weight: 500;
+}
+
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 1;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.carousel-indicators .active{
+    background-color: #a8874b;
+}
+
+.section-heading .section-heading-upper {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btn.btn-secondary.btn-more.text-uppercase{
+    padding: .175rem .55rem;
+    color: #a8874b;
+    border-color: #a8874b;
+    background-color: white;
+}
+
+.page-section{
+    margin-top: 0px;
+    margin-bottom: 0rem;
+    padding-top: 0px;
+}
+
+.text-on-carousel{
+    position: absolute;
+    bottom: 0;
+    background-color: #00000040;
+    color: white;margin-bottom: 0px;
+}
+
+.text-on-carousel-gallery{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 5.6rem;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff5e;
+    color: white;
+    margin-bottom: 0px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 3rem;
+}
+.social-icons ul>li>a {
+    display: block;
+    color: #a8864b;
+    background-color: #313032;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    height: 2rem;
+    width: 2rem;
+    transition: all .2s ease-in-out;
+    margin-left: 1rem;
+    text-align: center;
+}
+
+.event-row-active{
+    align-items: center;
+    padding: 1rem;
+    background-color: #c1a97e2e;
+}
+
+
+.event-row{
+    align-items: center;
+    padding: 1rem;
+}
+
+.section-event-index{
+    margin: 5rem
+}
+
+.carousel-event{
+    padding: 0rem 3rem;
+}
+.section-map-index{
+    margin: 2rem 5rem;
+}
+
+/*room type page*/
+.room-type-detail{
+    text-align: center;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    border: 2px solid #a8874b;
+    padding: 3rem;
+}
+
+/*gallery page*/
+.gallery-carousel{
+    text-align: center;
+    margin: 5rem
+}
+
+.gallery-carousel-detail{
+    border: 2px solid #a8874b;
+    padding: 0rem 3rem;
+}
+
+/*event page*/
+.event-carousel{
+    text-align: center;
+    margin: 5rem 5rem 0 5rem
+}
+
+.event-carousel-detail{
+    border: 2px solid #a8874b;
+    padding: 0rem 3rem;
+}
+
+.event-overflow{
+    text-align: center;
+    margin: 1rem 5rem 5rem 5rem
+}
+
+/*map page*/
+.map-section{
+    text-align: center;
+    margin: 5rem;
+}
+
+.footer {
+    background-color: #a8874b;
+}
+
+.text-footer{
+    text-align: left;
+    color: #313032;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.text-contact-us-footer{
+    text-align: right;
+}
+
+.img-footer{
+    max-width: 40%;
+}
+
+.contact-us-row{
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.contact-us{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 992px) {
+    .contact-us{
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffffc7;
+        width: 40%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .site-heading {
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+        background-color: #313133;
+    }
+
+    #mainNav{
+        background-color: #ffffff;
+        border: 2px solid #313133;
+        border-left: 0px;
+        border-right: 0px;
+    }
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    #mainNav{
+        background-color: #313133;
+    }
+    .clearfix{
+        margin-top: 1rem !important;
+    }
+    .section-map-index, .section-event-index{
+        margin: 1rem 0;
+    }
+    .carousel-event{
+        padding: 0;
+    }
+    .carousel-control-next, .carousel-control-prev{
+        display: none;
+    }
+
+    /*room type page*/
+    .room-type-detail{
+        padding: 0;
+    }
+
+    /*gallery page*/
+    .gallery-carousel, .event-carousel, .map-section{
+        margin: 1rem 0;
+    }
+
+    .gallery-carousel-detail, .event-carousel-detail{
+        padding: 0;
+    }
+
+    .event-overflow{
+        margin: 1rem 0;
+    }
+
+    /*footer*/
+
+    .text-footer{
+        text-align: left;
+        color: #313032;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .text-contact-us-footer{
+        text-align: center;
+    }
+
+    .img-footer-logo{
+        text-align: center;
+    }
+
+    .img-footer{
+        max-width: 70%;
+    }
+}
+
